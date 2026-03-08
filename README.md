@@ -18,15 +18,7 @@ The project demonstrates how to build, scan, and deploy a multi-service Python a
                 
 **📂 Project Structure** <br>
 
-python-code-library-app <br>
-│
-├── auth/           # Authentication microservice
-├── book/           # Book management service
-├── borrow/         # Borrow service
-├── database/       # Database service
-├── compose.yml     # Docker Compose file
-├── Dockerfile      # Main application Dockerfile
-└── README.md
+<img width="452" height="242" alt="image" src="https://github.com/user-attachments/assets/f2ac2246-1d5c-4a83-9f47-e4006caf57ce" />
 
 
 **The project includes a Jenkins pipeline that automates:** <br>
