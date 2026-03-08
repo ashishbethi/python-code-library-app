@@ -15,36 +15,6 @@ The project demonstrates how to build, scan, and deploy a multi-service Python a
 •	Deployed the containerized application using Docker Stack with a compose configuration for service orchestration.
 •	Integrated with new relic tool to monitor cpu, memory, storage, network usage of master, slave nodes of docker swarm and containers hosted in it to ensure high availability.
 
-
-
-**🏗 Project Architecture**
-
-The application is built using a microservices architecture.
-
-                +-------------+
-                |   Frontend  |
-                +------+------+
-                       |
-                       v
-                +-------------+
-                |  App Service|
-                +------+------+ 
-                       |
-   -----------------------------------------
-   |               |              |
-   v               v              v
-+-------+     +--------+     +---------+
-| Auth  |     |  Book  |     | Borrow  |
-|Service|     |Service |     | Service |
-+---+---+     +---+----+     +----+----+
-    |             |              |
-    --------------------------------
-                     |
-                     v
-                +---------+
-                |Database |
-                +---------+
-
                 
 **📂 Project Structure**
 
@@ -57,6 +27,7 @@ python-code-library-app
 ├── compose.yml     # Docker Compose file
 ├── Dockerfile      # Main application Dockerfile
 └── README.md
+
 
 **The project includes a Jenkins pipeline that automates:**
 
