@@ -1,33 +1,23 @@
-📚 Python Code Library App
+**Python Code Library App**
 
 A containerized Python microservices application that provides a simple library management system.
-The project demonstrates how to build, scan, and deploy a multi-service Python application using Docker, DevSecOps tools, and CI/CD pipelines.
+The project demonstrates how to build, scan, and deploy a multi-service Python application using Jenkins, Trivy, Sonar, Docker Swarm
 
-This repository is designed for learning DevOps practices such as containerization, security scanning, and automated deployment.
 
-🚀 Features
 
-📖 Library management system
+**Detailed Project Info:**
 
-🔐 Authentication service
+•	Implemented an end-to-end CI/CD pipeline using Jenkins to automate build, security scanning, and deployment of a Python microservices application.
+•	Integrated SonarQube for static code analysis to detect bugs, vulnerabilities, and maintain code quality.
+•	Built Docker images for multiple microservices including authentication, book management, borrow service, and database components.
+•	Implemented container security scanning using Trivy to identify vulnerabilities in Docker images before deployment.
+•	Automated Docker image tagging and publishing to Docker Hub using Jenkins pipeline credentials.
+•	Deployed the containerized application using Docker Stack with a compose configuration for service orchestration.
+•	Integrated with new relic tool to monitor cpu, memory, storage, network usage of master, slave nodes of docker swarm and containers hosted in it to ensure high availability.
 
-📚 Book management service
 
-📦 Borrow management service
 
-🗄 Database service
-
-🐳 Containerized using Docker
-
-🔎 Security scanning with Trivy
-
-📊 Code quality analysis with SonarQube
-
-⚙️ CI/CD pipeline using Jenkins
-
-📦 Docker image registry integration
-
-🏗 Project Architecture
+**🏗 Project Architecture**
 
 The application is built using a microservices architecture.
 
@@ -54,7 +44,10 @@ The application is built using a microservices architecture.
                 +---------+
                 |Database |
                 +---------+
-📂 Project Structure
+
+                
+**📂 Project Structure**
+
 python-code-library-app
 │
 ├── auth/           # Authentication microservice
@@ -64,38 +57,8 @@ python-code-library-app
 ├── compose.yml     # Docker Compose file
 ├── Dockerfile      # Main application Dockerfile
 └── README.md
-🐳 Running the Application with Docker
-1️⃣ Clone the repository
-git clone https://github.com/ashishbethi/python-code-library-app.git
-cd python-code-library-app
-2️⃣ Build Docker images
-docker build -t dbimage database/
-docker build -t authimage auth/
-docker build -t bookimage book/
-docker build -t borrowimage borrow/
-docker build -t appimage .
-3️⃣ Run the application
 
-Using Docker Compose:
-
-docker-compose up -d
-🔐 Security Scanning
-
-The project integrates Trivy to scan Docker images for vulnerabilities.
-
-Example:
-
-trivy image appimage
-📊 Code Quality Analysis
-
-Static code analysis is performed using SonarQube to ensure high code quality and security.
-
-Example scanner command:
-
-sonar-scanner -Dsonar.projectKey=MyProject
-⚙️ CI/CD Pipeline
-
-The project includes a Jenkins pipeline that automates:
+**The project includes a Jenkins pipeline that automates:**
 
 1️⃣ Code checkout from GitHub
 2️⃣ Code quality analysis (SonarQube)
@@ -105,70 +68,4 @@ The project includes a Jenkins pipeline that automates:
 6️⃣ Push images to DockerHub
 7️⃣ Deployment using Docker Stack
 
-📦 Docker Images
 
-Images are pushed to DockerHub repository:
-
-ashbethi10/myproj
-
-Services include:
-
-dbimage
-
-authimage
-
-bookimage
-
-borrowimage
-
-appimage
-
-🛠 Tech Stack
-
-Python
-
-Docker
-
-Docker Compose
-
-Jenkins
-
-SonarQube
-
-Trivy
-
-GitHub
-
-Python is widely used for automation and DevOps workflows, making it suitable for building backend services and operational tooling.
-
-🎯 Learning Objectives
-
-This project demonstrates:
-
-Microservices architecture
-
-Containerization using Docker
-
-DevSecOps practices
-
-CI/CD pipeline implementation
-
-Container security scanning
-
-Automated deployments
-
-🤝 Contributing
-
-Contributions are welcome.
-
-Steps:
-
-Fork the repository
-
-Create a feature branch
-
-Commit changes
-
-Push your branch
-
-Open a Pull Request
