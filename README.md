@@ -19,7 +19,7 @@ The project demonstrates how to build, scan, and deploy a multi-service Python a
 <br>
 <br>
 
-**📂 Project Structure** <br>
+**📂 Project Structure** 
 
 <img width="452" height="242" alt="image" src="https://github.com/user-attachments/assets/f2ac2246-1d5c-4a83-9f47-e4006caf57ce" />
 
