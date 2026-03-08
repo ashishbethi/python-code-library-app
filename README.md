@@ -3,7 +3,8 @@
 A containerized Python microservices application that provides a simple library management system.<br>
 The project demonstrates how to build, scan, and deploy a multi-service Python application using Jenkins, Trivy, Sonar, Docker Swarm<br>
 
-
+<br>
+<br>
 
 **Detailed Project Info:** <br>
 
@@ -15,10 +16,15 @@ The project demonstrates how to build, scan, and deploy a multi-service Python a
 •	Deployed the containerized application using Docker Stack with a compose configuration for service orchestration. <br>
 •	Integrated with new relic tool to monitor cpu, memory, storage, network usage of master, slave nodes of docker swarm and containers hosted in it to ensure high availability.<br>
 
-                
+<br>
+<br>
+
 **📂 Project Structure** <br>
 
 <img width="452" height="242" alt="image" src="https://github.com/user-attachments/assets/f2ac2246-1d5c-4a83-9f47-e4006caf57ce" />
+
+<br>
+<br>
 
 
 **The project includes a Jenkins pipeline that automates:** <br>
